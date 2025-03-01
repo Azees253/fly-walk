@@ -34,20 +34,14 @@
 .product-box img {
   border-radius: 10px;
 }
-@media screen and (min-width: 400px) {
+
+@media screen and (max-width: 800px) {
   .product-section {
-    margin-top: 50%;
+    margin-top: 20%;
   }
 }
-
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 700px) {
   .product-section {
-    margin-top: 30%;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .product-section {
-    margin-top: 15%;
+    margin-top: 45%;
   }
 }
