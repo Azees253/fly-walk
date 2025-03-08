@@ -1,11 +1,6 @@
 import Navbar from "../Navbar";
 import "../styles/Collection.css";
-import white from "../assets/white.jpg";
-import black from "../assets/black.jpg";
-import tshirt from "../assets/T-shirt.jpg";
-import jeans from "../assets/jeans.jpg";
-import cotten from "../assets/cottan.jpg";
-import placer from "../assets/placer.jpg";
+import { CollectionItems } from "../CollectionItems";
 
 export default function Collection() {
   function handleClick(e) {
@@ -35,30 +30,17 @@ export default function Collection() {
           <i class="fa-solid fa-magnifying-glass"></i>
         </form>
         <div className="product" id="product">
-          <div className="product-box">
-            <img style={{ width: "200px", height: "200px" }} src={white}></img>
-            <p>White shirt</p>
-          </div>
-          <div className="product-box">
-            <img style={{ width: "200px", height: "200px" }} src={black}></img>
-            <p>Black shirt</p>
-          </div>
-          <div className="product-box">
-            <img style={{ width: "200px", height: "200px" }} src={tshirt}></img>
-            <p>T -shirt</p>
-          </div>
-          <div className="product-box">
-            <img style={{ width: "200px", height: "200px" }} src={jeans}></img>
-            <p>Jeans</p>
-          </div>
-          <div className="product-box">
-            <img style={{ width: "200px", height: "200px" }} src={cotten}></img>
-            <p>Cotten-shirt</p>
-          </div>
-          <div className="product-box">
-            <img style={{ width: "200px", height: "200px" }} src={placer}></img>
-            <p>Placer</p>
-          </div>
+          {CollectionItems.map((item, index) => {
+            return (
+              <div className={item.cName}>
+                <img
+                  style={{ width: "200px", height: "200px" }}
+                  src={item.image}
+                />
+                <p>{item.para}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
       {/* Footer */}
