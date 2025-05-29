@@ -7,7 +7,7 @@ import Order from "./pages/Order/Order";
 import { ToastContainer } from "react-toastify";
 
 function App() {
-  const url = "http://localhost:4000";
+  const url = "https://fly-walk-backend.onrender.com";
   return (
     <div>
       <ToastContainer />
