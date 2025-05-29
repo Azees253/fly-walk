@@ -48,7 +48,7 @@ export default function Collection({
                 name={item.name}
                 price={item.price}
                 description={item.description}
-                image={`http://localhost:4000/images/${item.image}`}
+                image={`https://fly-walk-backend.onrender.com/images/${item.image}`}
                 token={token}
                 itemCount={itemCount}
                 setItemCount={setItemCount}
