@@ -18,7 +18,7 @@ export default function App() {
   const [CollectionItems, setCollectioItems] = useState([]);
   const [itemCount, setItemCount] = useState({});
 
-  const url = "http://localhost:4000";
+  const url = "https://fly-walk-backend.onrender.com";
 
   const loadCartData = async (token) => {
     const response = await axios.post(
