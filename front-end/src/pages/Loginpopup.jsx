@@ -9,7 +9,7 @@ const Loginpopup = ({ setShowLogin, setToken }) => {
     email: "",
     password: "",
   });
-  const url = "https://fly-walk-backend.onrender.com";
+  const url = "https://fly-walk-backend1.onrender.com";
 
   const onChangeHandler = (event) => {
     const name = event.target.name;
