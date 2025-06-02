@@ -26,7 +26,7 @@ export default function Navbar({
     navigate("/");
   };
 
-  const url = "https://fly-walk-backend1.onrender.com";
+  const url = "http://localhost:4000";
 
   const fetchCollection = async () => {
     const response = await axios.get(url + "/api/collection/list");
