@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/fly-walk/">
+  <BrowserRouter basename="/">
     <App />
   </BrowserRouter>
 );
