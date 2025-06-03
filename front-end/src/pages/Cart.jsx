@@ -30,7 +30,7 @@ const Cart = ({
                 <div>
                   <div className="cart-items-title cart-items-item">
                     <img
-                      src={`http://localhost:4000/images/${item.image}`}
+                      src={`https://fly-walk-back-end.onrender.com/images/${item.image}`}
                       alt=""
                       style={{ width: "50px" }}
                     />
